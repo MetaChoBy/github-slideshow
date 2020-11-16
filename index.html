@@ -1,13 +1,90 @@
----
-layout: presentation
----
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link type="text/css" rel="stylesheet" href=css/reset.css>
+        <link type="text/css" rel="stylesheet" href=css/mobile.css>
+        <link type="text/css" rel="stylesheet" href=css/style.css>
+        <title> Akira Boutique </title>
+
+    </head>
+
+    <body>
+       <?php require("./header.php");?>
+       <?php require "footer.php";?>
+
+
+                <article class="conten" >
+                    <h2>Le projet </h2>
+                    <img src="images/AdobeStock_182810311.png" alt="">
+                    <p>
+                        Akira Café sera le premier Manga-café sur la rochelle, avec une ouverture prévue pour janvier 2021.<br>
+                        Tout d'abord nous cherchons à vous proposer un lieu convivial et coloré, autour de la pop culture asiatique.<br>
+                        Nous serons heureux de vous accueillir et de vous faire gouter nos meilleurs préparations sucrés, inspirés de nos voyages en Asie, tels que : les dorayaki, les mochi Ainsi que des spécialités mieux connues du grand public comme les bubble waffle ou tout simplemnt un café.<br>
+
+                        Vous serez aussi en mesure de profiter de nos onigiri, des thés traddiotionel japonais ainsi que de différentes saveurs de bubble tea.
+
+                    </p>
+
+                </article>
+
+
+                <article class="conten" >
+                    <h2>Espace détente</h2>
+                    <img src="images/AdobeStock_330926373.jpeg" alt="">
+                    <p>
+                        C'est avec impatience que nous souhaitons mettre en place ce projet pour vous offrir un espace détente, pour découvrir de nouveaux Mangas, Comics et autres ou simplement redécouvrir vos ouvrages préferés.<br>
+                        Une collection de plus de 2000 mangas et comis vous sera accessibles sans frais supplémentaires pour toute consommation.
+                    </p>
+                </article>
+
+
+                <article class="conte" >
+                    <h2>Animation</h2>
+                    <img src="images/AdobeStock_242105713.jpeg" alt="">
+                    <p>Notre objectif est de créer un lieu de rencontre conviviale , c'est pour cela que régulièrement nous organiserons des soirées à thèmes (gamings, karaoké) ainsi que des concours pour avoir un cadre chaleureux. </p>
+                </article>
+
+
+                <article class="conten" >
+                    <h2>Boutique</h2>
+                    <img src="images/AdobeStock_181163730.jpeg" alt="">
+                    Pour les amoureux de la culture Nippone, nous souhaitons pouvoir mettre à disposition des objets traditionnels tels que les maneki neko, les kokeshi ou des objets directement liés à la culture geeks comme des figurines.<br>
+                    Pour les plus gourmands et les amateurs du goût, vous serez en mesure de trouver votre bonheur parmi les nombreuses gourmandises sucrées ou salées ainsi que les boissons typiques du Japon ( ramune, sodas avec des goûts surprenants, etc ..)
+
+                </article>
+
+
+            </div>
+            <h2>Spécialités</h2>
+            <div class="specialites">
+
+
+                <img src="images/AS_dorayaki.jpeg" alt="">
+                <div class="spec">
+                    <h2>Les dorayaki </h2>
+
+                    Les dorayaki: deux pâtes en forme de pancake, faites en kasutera, enveloppant une garniture de pâte de haricot rouge <br>
+                </div>
+            </div>
+
+            <div class="specialites">
+                <img src="images/AdobeStock_mochi.jpeg" alt="">
+                <div class="spec">
+                    <h2>Les mochis</h2>
+                    Les Mochi : une pâtisserie japonaise à base de riz gluant et fourrée généralement avec du anko, la pâte de haricot azuki sucré. <br>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Images  : licence Adobe </p>
+
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
